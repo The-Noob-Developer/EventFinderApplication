@@ -12,7 +12,7 @@ if st.button("Login"):
     else:
         try:
             response = requests.post(
-                "https://eventfinderbackend.onrender.com/login",
+                "https://eventfinderapplicationbackend.onrender.com/login",
                 data={
                     "username": username,
                     "password": password
@@ -30,7 +30,7 @@ if st.button("Login"):
             else:
                 st.error("❌ Login failed: Invalid credentials")
         except requests.exceptions.ConnectionError:
-            st.error("⚠️ Backend server is not reachable at https://eventfinderbackend.onrender.com")
+            st.error("⚠️ Backend server is not reachable at https://eventfinderapplicationbackend.onrender.com")
 
 # Optional: direct link to register
 st.markdown("Don't have an account? [Register here](/register)")
