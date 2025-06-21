@@ -13,7 +13,7 @@ if st.button("Register"):
     else:
         try:
             response = requests.post(
-                "https://eventfinderbackend.onrender.com/register",
+                "https://eventfinderapplicationbackend.onrender.com/register",
                 json={
                     "username": username,
                     "email": email,
@@ -37,4 +37,4 @@ if st.button("Register"):
                     st.error("❌ Registration failed. Please try again.")
 
         except requests.exceptions.ConnectionError:
-            st.error("⚠️ Backend server is not reachable at https://eventfinderbackend.onrender.com.")
+            st.error("⚠️ Backend server is not reachable at https://eventfinderapplicationbackend.onrender.com.")
