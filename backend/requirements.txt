@@ -1,0 +1,32 @@
+# ─── Core ───────────────────────────────────────────────
+fastapi==0.104.1           # needs Pydantic 2.x
+uvicorn[standard]==0.24.0  # ASGI server
+
+# ─── Database ───────────────────────────────────────────
+sqlalchemy==2.0.23
+pymysql==1.1.0
+cryptography               # grab latest wheel (≥42 works fine)
+
+# ─── Auth / Security ───────────────────────────────────
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+PyJWT
+
+# ─── Data validation (Pydantic 2) ───────────────────────
+pydantic==1.10.12            # pulls pre‑built wheels for cp311
+# (No “pydantic[email]” extra needed; v2 bundles e‑mail types)
+
+# ─── Misc ───────────────────────────────────────────────
+python-dotenv==1.0.0
+
+# ─── Optional extras (uncomment if/when you use them) ───
+# slowapi==0.1.9   # rate‑limiting
+# redis==5.0.1     # caching / background tasks
+# pytest==7.4.3    # unit tests
+# pytest-asyncio==0.21.1
+
+
+email-validator==2.1.1
+
