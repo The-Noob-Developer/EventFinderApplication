@@ -103,7 +103,7 @@ if st.session_state.get("search_done"):
                 }
 
                 try:
-                    res = requests.post("https://eventfinderbackend.onrender.com/mark_favorite", headers=headers, json=json_data)
+                    res = requests.post("https://eventfinderapplicationbackend.onrender.com/mark_favorite", headers=headers, json=json_data)
                     if res.status_code == 200:
                         st.success("✅ Favorited!")
                         st.session_state[fav_key] = True  # Mark as clicked
