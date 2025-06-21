@@ -9,7 +9,7 @@ if "token" not in st.session_state:
     st.warning("Please log in to view your favourite events.")
     st.stop()
 
-API_BASE = "https://eventfinderbackend.onrender.com"  # ← change if your backend lives elsewhere
+API_BASE = "https://eventfinderapplicationbackend.onrender.com"  
 
 
 @st.cache_data(show_spinner=False, ttl=60)  # 1‑min cache
