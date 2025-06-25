@@ -33,4 +33,4 @@ if st.button("Login"):
             st.error("⚠️ Backend server is not reachable at https://eventfinderapplicationbackend.onrender.com")
 
 # Optional: direct link to register
-st.markdown("Don't have an account? [Register here](/register)")
+st.markdown("Don't have an account? [Register here](/Register)")
